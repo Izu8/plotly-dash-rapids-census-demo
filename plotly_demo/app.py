@@ -589,7 +589,7 @@ def update_plots(
 
 def read_dataset(state_name, gpu_enabled, currently_loaded_state):
     global c_df
-    data_path = "/kpi/input/training/290/total_population_dataset (1).parquet"
+    data_path = "/kqi/input/training/290/total_population_dataset (1).parquet"
     c_df = load_dataset(data_path, "cudf" if gpu_enabled else "pandas")
     return c_df
 
